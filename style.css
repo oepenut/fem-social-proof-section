@@ -1,0 +1,145 @@
+:root {
+  --strong-purple: hsl(300, 43%, 22%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url(images/bg-pattern-top-mobile.svg) left top no-repeat,
+    url(images/bg-pattern-bottom-mobile.svg) right bottom no-repeat;
+  margin: 10px;
+  font-family: "Spartan";
+  font-size: 15px;
+  text-align: center;
+}
+
+.description h1 {
+  color: var(--strong-purple);
+  font-weight: 700;
+}
+
+.description p {
+  color: hsl(303, 10%, 53%);
+  font-weight: 400;
+}
+
+.ratings {
+  margin: 30px 0;
+}
+
+.rating {
+  background-color: hsl(300, 24%, 96%);
+  margin: 10px 0;
+  border-radius: 5px;
+  height: 60px;
+  padding: 10px;
+  text-align: center;
+  color: var(--strong-purple);
+  font-weight: 700;
+}
+
+.review {
+  background-color: var(--strong-purple);
+  margin: 10px 0;
+  border-radius: 5px;
+  padding: 40px;
+  text-align: justify;
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+}
+
+.buyer-info {
+  margin-bottom: 15px;
+  height: 50px;
+  overflow: auto;
+}
+
+.review img {
+  border-radius: 100%;
+  height: inherit;
+  float: left;
+}
+
+.buyer-name {
+  padding-left: 30px;
+  font-weight: 500;
+  float: inline-start;
+}
+
+.buyer-title {
+  padding-left: 30px;
+  float: inline-start;
+  color: hsl(333, 80%, 67%);
+  font-weight: 500;
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    background-color: url(images/bg-pattern-top-desktop.svg) left top no-repeat,
+      url(images/bg-pattern-bottom-desktop.svg) right bottom no-repeat;
+  }
+
+  .description {
+    float: left;
+    width: 50%;
+  }
+
+  .ratings {
+    display: inline-block;
+    width: 50%;
+  }
+
+  .rating {
+    padding: 25px;
+    width: 75%;
+  }
+
+  #rating-1 {
+    margin-left: 10px;
+  }
+  #rating-2 {
+    margin-left: 30px;
+  }
+  #rating-3 {
+    margin-left: 50px;
+  }
+
+  .stars {
+    padding-left: 20px;
+    float: left;
+  }
+
+  .reviews {
+    width: 100%;
+  }
+
+  .reviews::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .review {
+    margin-right: 10px;
+    width: 30%;
+    float: left;
+  }
+
+  .review:last-child {
+    margin-right: 0;
+  }
+
+  #review-1 {
+    margin-top: 10px;
+  }
+
+  #review-2 {
+    margin-top: 40px;
+  }
+
+  #review-3 {
+    margin-top: 70px;
+  }
+}
