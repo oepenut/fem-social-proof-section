@@ -75,7 +75,7 @@ body {
   font-weight: 500;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 700px) {
   body {
     background-color: url(images/bg-pattern-top-desktop.svg) left top no-repeat,
       url(images/bg-pattern-bottom-desktop.svg) right bottom no-repeat;
